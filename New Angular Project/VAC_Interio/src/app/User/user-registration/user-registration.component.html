@@ -1,0 +1,109 @@
+<router-outlet></router-outlet>
+<div class="login">
+
+
+  <mat-card>
+
+
+
+    <mat-card-title>New User Registration</mat-card-title>
+
+    <br>
+
+      <form [formGroup]="registrationForm" (ngSubmit)="Register">
+
+        <mat-form-field class="example-full-width" appearance="fill">
+
+          <mat-label>FirstName</mat-label>
+
+          <input formControlName="firstName" matInput placeholder="USERNAME">
+
+        </mat-form-field>
+
+
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-label>Last Name</mat-label>
+
+            <input formControlName="lastName" matInput placeholder="Last Name">
+
+          </mat-form-field>
+
+          <!-- <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-label>Gender</mat-label>
+
+            <input matInput placeholder="Gender">
+
+          </mat-form-field> -->
+
+
+
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-label>Phone Number</mat-label>
+
+            <input formControlName="Phone" matInput placeholder="Phone Number">
+
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-label>Address</mat-label>
+
+            <input formControlName="Address" matInput placeholder="Address">
+
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="fill">
+
+            <mat-label>Email</mat-label>
+
+            <input formControlName="Email" matInput placeholder="Email">
+
+          </mat-form-field>
+
+
+         <mat-form-field class="example-full-width" appearance="fill">
+
+          <mat-label>Gender</mat-label>
+
+          <input formControlName="Gender" type="text" matInput placeholder="Gender">
+
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+
+          <mat-label>Password</mat-label>
+
+
+          <input formControlName="Password" type="password" matInput placeholder="PASSWORD">
+
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+
+          <mat-label>Confirm Password</mat-label>
+
+          <input formControlName="Confirm_password" type="password" matInput placeholder="CONFIRM PASSWORD">
+
+        </mat-form-field>
+
+       <!-- <p id="errPass" style="color: red;"></p> -->
+
+
+
+        <button mat-flat-button color="primary" class="example-full-width" routerLink="login" (click)="Register()">Register</button>
+        <a  routerLink='/Login'>Already Have an Account?</a>
+
+
+
+    </form>
+
+
+  </mat-card>
+
+
+  </div>
+

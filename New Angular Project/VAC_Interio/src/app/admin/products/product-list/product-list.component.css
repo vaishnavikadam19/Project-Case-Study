@@ -1,0 +1,49 @@
+/* .admin-page{
+  margin-left: 200px;
+  margin-top: 65px;
+  margin-bottom: 0;
+
+}
+table {
+  width: 100%;
+  opacity: 80%;
+  color: black;
+}
+
+mat-card{
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+h1{
+  margin-left: 200px;
+  margin-top: 65px;
+  margin-bottom: 0;
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+img{
+  background-size: cover;
+  width: 150px;
+
+}
+.category-table{
+  margin-left: 200px;
+  margin-top: 65px;
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 600px;
+  text-align: center;
+}
+table {
+  background-color: rgb(199, 199, 202);
+  width: 100%;
+  opacity: 80%;
+
+}

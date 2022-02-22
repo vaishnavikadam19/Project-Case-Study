@@ -1,0 +1,48 @@
+
+<div class="category-add">
+  <h1>Add Categories</h1>
+   <div class="mat-grid">
+      <div class="mat-col-12">
+        <mat-card>
+          <div class="add-product">
+            <form [formGroup]="formValue">
+              Name of Category
+              <mat-form-field class="example-full-width" appearance="fill">
+
+                <input matInput type="text" formControlName="name">
+              </mat-form-field>
+
+             <br/>
+             <br/>
+             <br/>
+             Icon of Category
+             <mat-form-field class="example-full-width" appearance="fill">
+
+              <input matInput type="text" formControlName="icon">
+            </mat-form-field>
+
+              <!-- Icon of Category
+              <input type="text" formControlName="icon"
+              /> -->
+
+
+            <br>
+
+            </form>
+            <br/>
+          <button mat-flat-button routerLink="category-list" color="primary" (click)="postCategory()"><mat-icon>add</mat-icon>ADD</button>
+            <br>
+
+        </div>
+        </mat-card>
+        <button mat-flat-button routerLink="category-list" color="primary">View Category List</button>
+      </div>
+
+</div>
+
+<router-outlet></router-outlet>
+
+
+
+
+

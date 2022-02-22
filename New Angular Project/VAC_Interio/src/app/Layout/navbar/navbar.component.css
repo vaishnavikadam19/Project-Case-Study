@@ -1,0 +1,39 @@
+.fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:0%;
+  content: attr(data-count);
+  font-size:40%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+
+  color:shopping-cart-red;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+  background: white;
+  border-style:solid;
+  }
+  .fa-circle {
+  color:#252424;
+  }
+
+
+
+  .red-cart {
+  color: #DF0000; background:white;
+  }
+    .navbar{
+    height: 70px;
+  }
+
+  .form-inline input{
+    margin-top: 3px;
+    margin-left: 0;
+  }
+
+  .form-inline .btn{
+    margin-left: 110%;
+    margin-top: 0px ;
+  }

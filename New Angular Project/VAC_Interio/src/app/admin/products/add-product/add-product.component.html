@@ -1,0 +1,99 @@
+<!--
+<div class="admin-page">
+  <mat-card style="margin-top: 0;">
+    <h1>Add Products</h1>
+    <div class="add-product">
+      <form class="example-form">
+        <label>Name of Product</label>
+       <input type="text" name="" id="">
+       <br/>
+       <br/>
+       <br/>
+        <label>Name of Category</label>
+       <input type="text" name="" id="">
+       <br/>
+       <br/>
+       <br/>
+       <label>Price of Product</label>
+       <input type="text" name="" id="">
+       <br/>
+       <br/>
+        <br/>
+       <label>Quantity of Product</label>
+       <input type="text" name="" id="">
+       <br/>
+       <br/>
+      </form>
+      <br>
+    </div>
+   <div class="mat-grid">
+     <div class="mat-col-12">
+        <mat-toolbar>
+          <div class="mat-toolbar-group-left"></div>
+          <div class="mat-toolbar-group-right">
+            <button mat-flat-button color="primary">Create New Product</button>
+          </div>
+          <div class="mat-toolbar-group-right">
+            <button mat-flat-button color="warn">Cancel</button>
+          </div>
+        </mat-toolbar>
+     </div>
+   </div>
+    </mat-card>
+</div> -->
+
+<div class="category-add">
+  <h1>Add Product</h1>
+   <div class="mat-grid">
+      <div class="mat-col-12">
+        <mat-card>
+          <div class="add-product">
+            <form [formGroup]="formValue">
+              <label>Name of Product</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mat-form-field class="example-full-width" appearance="fill">
+
+                <input matInput type="text" formControlName="productName" >
+              </mat-form-field>
+
+
+             <br/>
+
+
+
+              <label>Image of Product</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <mat-form-field class="example-full-width" appearance="fill">
+
+                <input matInput type="text" formControlName="image" >
+
+                </mat-form-field>
+
+             <label>Description of Product</label>
+             &nbsp;<mat-form-field class="example-full-width" appearance="fill">
+
+                <input matInput type="text" formControlName="description">
+              </mat-form-field>
+
+
+             <br/>
+             <label>Price of Product</label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <mat-form-field class="example-full-width" appearance="fill">
+
+                <input matInput type="text" formControlName="price">
+              </mat-form-field>
+
+
+             <br/>
+
+            </form>
+            <br/>
+          <button mat-flat-button routerLink="product-list" color="primary" (click)="postProductDetails()"><mat-icon>add</mat-icon>ADD</button>
+            <br>
+
+        </div>
+        </mat-card>
+      </div>
+
+</div>
+

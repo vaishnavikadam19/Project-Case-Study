@@ -1,0 +1,32 @@
+.category-add{
+  margin-left: 200px;
+  margin-top: 60px;
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 600px;
+}
+
+.category-add mat-card{
+  opacity: 70%;
+  max-width: 30%;
+  margin-left: 30%;
+  opacity: 90%;
+  background-color: rgb(199, 199, 202);
+  margin-top: 10%;
+}
+
+.category-add mat-card input{
+  width: 60%;
+}
+.category-add mat-card button{
+  width: 60%;
+  text-align: center;
+  margin-left: 55px;
+}
+.mat-col-12 button{
+  width: 20%;
+  text-align: center;
+  margin-left: 405px;
+  margin-top: 40px;
+}

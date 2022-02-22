@@ -1,0 +1,96 @@
+<!--
+<div class="admin-page">
+  <mat-card style="margin-top: 0;">
+    <h1>Products</h1>
+    <h3>List of all Products</h3>
+   <div class="mat-grid">
+     <div class="mat-col-12">
+        <mat-toolbar>
+          <div class="mat-toolbar-group-left">
+            <button mat-flat-button routerLink="add-product" color="primary"><mat-icon>add</mat-icon>ADD</button>
+          </div>
+        </mat-toolbar>
+     </div>
+   </div>
+   <div style="margin:0 30px;">
+    <h2 style="text-align: center;">PRODUCT LIST</h2>
+</div>
+   <div class="mat-grid">
+     <div class="mat-col-12">
+      <table mat-table [dataSource]="products" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let product"> {{product.id}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> NAME </th>
+          <td mat-cell *matCellDef="let product"> {{product.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="image">
+          <th mat-header-cell *matHeaderCellDef> IMAGE </th>
+          <td mat-cell *matCellDef="let product"> {{product.image}} </td>
+        </ng-container> -->
+        <!-- <ng-container matColumnDef="category">
+          <th mat-header-cell *matHeaderCellDef> CATEGORY </th>
+          <td mat-cell *matCellDef="let product"> {{product.category}} </td>
+        </ng-container>
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef> Price </th>
+          <td mat-cell *matCellDef="let product"> {{product.price}} </td>
+        </ng-container>
+        <ng-container matColumnDef="quantity">
+          <th mat-header-cell *matHeaderCellDef> Quantity </th>
+          <td mat-cell *matCellDef="let product"> {{product.quantity}} </td>
+        </ng-container> -->
+        <!-- <ng-container matColumnDef="created">
+          <th mat-header-cell *matHeaderCellDef> CREATED DATE </th>
+          <td mat-cell *matCellDef="let product"> {{product.created}} </td>
+        </ng-container> -->
+        <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+
+           </div>
+   </div>
+    </mat-card>
+</div> -->
+<div class="category-table">
+
+  <div style="margin:0 30px;">
+   <h2 style="text-align: center;">CATEGORY LIST</h2>
+
+   <table class="table">
+    <thead>
+      <tr style="font-size: 20px;">
+        <th scope="col">id</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+        <th scope="col">Price</th>
+
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of productData">
+        <th scope="row">{{row.id}}</th>
+        <td>{{row.productName}}</td>
+        <td>{{row.description}}</td>
+
+        <td><img src="{{row.image}}"></td>
+        <td>{{row.price}}</td>
+
+        <td>
+          <!-- <button routerLink="edit"><mat-icon>edit</mat-icon></button> -->
+          <button (click)="deleteProduct(row)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
+

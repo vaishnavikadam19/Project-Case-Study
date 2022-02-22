@@ -1,0 +1,25 @@
+<router-outlet></router-outlet>
+
+<div class="login">
+
+<mat-card>
+  <div class="img"><img src="../../../assets/admin-logo.png" alt="admin log"></div>
+  <br/>
+  <mat-card-title>ADMIN LOGIN</mat-card-title>
+  <br>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label><mat-icon>perm_identity</mat-icon>Username</mat-label>
+        <input matInput placeholder="USERNAME" name="UserName" id="userName" class="form-control" formControlName="username" required>
+      </mat-form-field>
+
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label><mat-icon>key</mat-icon>Password</mat-label>
+        <input matInput type="password" placeholder="PASSWORD" name="Password" id="passWord" class="form-control" formControlName="password" required>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary" class="example-full-width" (click)="login()">LOGIN</button>
+  </form>
+</mat-card>
+</div>

@@ -1,0 +1,35 @@
+.dashboard{
+  margin-left: 200px;
+  margin-top: 65px;
+  background-image: url('../../../assets/loft-home-office-interior-design.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  margin-bottom: 0;
+  height: 600px;
+}
+
+mat-card {
+  max-width: 200px;
+  max-height: 500px;
+  margin-left: 10%;
+  background: rgb(197, 198, 199);
+  background: radial-gradient(circle, rgba(156,171,184,1) 0%, rgba(174,196,222,0.7175245098039216) 100%);
+  display: flex;
+
+
+}
+
+mat-card .icon{
+  font-size: 4em;
+  color: white;
+}
+mat-card .name{
+  font-size: 1.4em;
+  margin-left: 8px;
+}
+
+mat-card .number{
+  font-size: 7em;
+  margin-left: 110px;
+
+}

@@ -1,0 +1,51 @@
+/* .admin-page{
+  margin-left: 210px;
+  margin-top: 50px;
+
+}
+mat-card{
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+example-form{
+  opacity: 80%;
+} */
+.category-add{
+  margin-left: 200px;
+  margin-top: 60px;
+  background-image: url('../../../../assets/loft-home-office-interior-design.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 600px;
+}
+
+.category-add mat-card{
+  opacity: 70%;
+  max-width: 40%;
+  margin-left: 30%;
+  opacity: 90%;
+  background-color: rgb(199, 199, 202);
+  margin-top: 0%;
+}
+
+.category-add mat-card input{
+  width: 60%;
+}
+.category-add mat-card button{
+  width: 60%;
+  text-align: center;
+  margin-left: 55px;
+  margin-top: 0%;
+}
+.mat-col-12 button{
+  width: 20%;
+  text-align: center;
+  margin-left: 405px;
+  margin-top: 40px;
+}
+.category-add mat-card label{
+ margin-left: 0;
+}

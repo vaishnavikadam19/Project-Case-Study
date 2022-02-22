@@ -1,0 +1,62 @@
+<div class="category-table">
+
+   <div style="margin:0 30px;">
+    <h2 style="text-align: center;">CATEGORY LIST</h2>
+
+   <!-- <div class="mat-grid">
+     <div class="mat-col-12">
+      <table mat-table [dataSource]="categories" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef="let category"> {{category.id}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> NAME </th>
+          <td mat-cell *matCellDef="let category"> {{category.name}} </td>
+        </ng-container>-->
+
+         <!-- <img src="../../../../assets/images/Categories/Kitchen.png"> -->
+        <!-- <ng-container matColumnDef="icon">
+          <th mat-header-cell *matHeaderCellDef> ICON </th>
+          <td mat-cell *matCellDef="let category"> {{category.icon}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef> ACTION </th>
+          <td mat-cell *matCellDef="let category"> <mat-icon>delete</mat-icon> </td>
+          <td mat-cell *matCellDef="let category"> <mat-icon>edit</mat-icon> </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+      <!-- </table> -->
+
+           <!-- </div> -->
+   <!-- </div> -->
+
+  <!-- </div>  -->
+  <table class="table">
+    <thead>
+      <tr style="font-size: 20px;">
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Icon</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of categoryData">
+        <th scope="row">{{row.id}}</th>
+        <td>{{row.name}}</td>
+        <td><img src="{{row.icon}}"></td>
+        <td>
+          <!-- <button routerLink="edit"><mat-icon>edit</mat-icon></button> -->
+          <button (click)="deleteCategory(row)"><mat-icon>delete</mat-icon></button>
+        </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+</div>
